@@ -1,10 +1,11 @@
 import {Link} from 'react-router-dom' 
+import Logorouge from '../../assets/Logorouge'
 
 
 export default function Header () {
     return (
         <div className='Header'>
-            <h1>Kasa</h1>
+            <h1>{Logorouge}</h1>
             <nav>
                 <ul>
                     <li><Link to="Home"> Accueil </Link></li>
