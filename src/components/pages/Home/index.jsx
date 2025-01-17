@@ -1,6 +1,6 @@
 import Header from '../../Header/index'
 import Footer from '../../Footer/index'
-import Logement from '../../../logement.json'
+
 
 export default function Error() {
     return (
@@ -8,7 +8,7 @@ export default function Error() {
             {Header}
         </div>,
         <div className=''>
-
+            Bonjour
         </div>,
         <div>
             {Footer}

@@ -1,11 +1,11 @@
 import {Link} from 'react-router-dom' 
-import Logorouge from '../../assets/Logorouge'
+import Logor from '../../assets/Logorouge.png'
 
 
 export default function Header () {
     return (
         <div className='Header'>
-            <h1>{Logorouge}</h1>
+            <img src= {Logor} alt = 'logo Kasa en rouge' className='logo-rouge' />
             <nav>
                 <ul>
                     <li><Link to="Home"> Accueil </Link></li>
