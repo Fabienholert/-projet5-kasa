@@ -1,4 +1,5 @@
 import Logob from '../../assets/Logoblanc.png'
+import '../../styles/footer.css'
 
 export default function Footer () {
     return (

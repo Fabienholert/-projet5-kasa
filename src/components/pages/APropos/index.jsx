@@ -1,7 +1,14 @@
+import Header from "../../Header/index.jsx"
+import Footer from "../../Footer/index.jsx"
 export default function Error() {
     return (
-        <div>
-            <h1>Oups 🙈 Cette page n existe pas</h1>
-        </div>
+        <>
+            < Header />
+        
+        <div></div>
+        <div></div>
+
+        < Footer />
+        </>
     )
 }
