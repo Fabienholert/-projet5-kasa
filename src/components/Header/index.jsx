@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom' 
 import Logor from '../../assets/Logorouge.png'
+import '../../styles/header.css'
 
 
 export default function Header () {
@@ -7,10 +8,8 @@ export default function Header () {
         <div className='Header'>
             <img src= {Logor} alt = 'logo Kasa en rouge' className='logo-rouge' />
             <nav>
-                <ul>
-                    <li><Link to="Home"> Accueil </Link></li>
-                    <li><Link to="Apropos"> A Propos </Link></li>
-                </ul>
+                    <Link to="Home"> Accueil </Link>
+                    <Link to="Apropos"> A Propos </Link>      
             </nav>
 
         </div>

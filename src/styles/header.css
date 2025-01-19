@@ -1,0 +1,24 @@
+.Header {
+    display : flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.Header nav a{
+    text-decoration: none;
+    font-family: montserra;
+    color: black;
+    padding: 20px;
+    size:24px
+}
+
+.Header nav a:hover{
+    text-decoration: underline;
+}
+
+.Header img{
+    width: 210px;
+    height: 68px;
+}
