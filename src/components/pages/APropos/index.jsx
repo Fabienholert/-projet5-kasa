@@ -1,6 +1,6 @@
 import Header from "../../Header/index.jsx"
 import Footer from "../../Footer/index.jsx"
-export default function Error() {
+export default function Apropos() {
     return (
         <>
             < Header />
@@ -11,4 +11,4 @@ export default function Error() {
         < Footer />
         </>
     )
-}
+};

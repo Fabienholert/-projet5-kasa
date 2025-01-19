@@ -2,7 +2,7 @@ import Header from '../../Header/index'
 import Footer from '../../Footer/index'
 
 
-export default function Error() {
+export default function Fichelogement() {
     return (
         <>
             <Header />
