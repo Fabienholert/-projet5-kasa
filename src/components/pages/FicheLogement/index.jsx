@@ -1,7 +1,15 @@
+import Header from '../../Header/index'
+import Footer from '../../Footer/index'
+
+
 export default function Error() {
     return (
-        <div>
-            <h1>Oups 🙈 Cette page n existe pas</h1>
-        </div>
+        <>
+            <Header />
+        <div className=''>
+            
+        </div>,
+        <Footer />
+        </>
     )
 }
