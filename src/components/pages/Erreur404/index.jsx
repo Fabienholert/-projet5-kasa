@@ -1,14 +1,15 @@
-import Header from "../../Header"
-import Footer from "../../Footer"
+import Header from '../../Header/index'
+import Footer from '../../Footer/index'
+
 
 export default function Error() {
     return (
-        <div>
-            {Header}
+        <>
+            <Header />
+        <div className=''>
+            Bonjour
         </div>,
-        <div></div>,
-        <div></div>,
-        <div>{Footer}</div>
-
+        <Footer />
+        </>
     )
 }
