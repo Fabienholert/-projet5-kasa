@@ -8,7 +8,7 @@ export default function Error() {
             <Header />
         <div className=''>
             Bonjour
-        </div>,
+        </div>
         <Footer />
         </>
     )
