@@ -7,8 +7,9 @@ export default function Affichagehome() {
         <>
             <Header />
         <div className=''>
-            Bonjour
+            Chez vous, partout et ailleurs
         </div>
+        <div>Card</div>
         <Footer />
         </>
     )
