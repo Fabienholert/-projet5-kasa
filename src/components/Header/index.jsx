@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom' 
+import {NavLink} from 'react-router-dom' 
 import Logor from '../../assets/Logorouge.png'
 import '../../styles/header.css'
 
@@ -8,8 +8,8 @@ export default function Header () {
         <div className='Header'>
             <img src= {Logor} alt = 'logo Kasa en rouge' className='logo-rouge' />
             <nav>
-                    <Link to="Home"> Accueil </Link>
-                    <Link to="Apropos"> A Propos </Link>      
+                    <NavLink to="/"> Accueil </NavLink>
+                    <NavLink to="/Apropos"> A Propos </NavLink>      
             </nav>
 
         </div>
