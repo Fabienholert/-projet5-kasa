@@ -1,4 +1,4 @@
-import '../../../assets/Imageapropos.jpg'
+import '../../assets/Imageapropos.jpg'
 
 export default function Apropos() {
     return (

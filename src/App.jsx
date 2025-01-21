@@ -1,26 +1,22 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './layout'
-import Home from '../src/components/pages/Home/index';
-import Apropos from '../src/components/pages/Apropos/index';
-import Erreur404 from '../src/components/pages/Erreur404/index';
-import Fichelogement from '../src/components/pages/Fichelogement/index';
-import Header from './components/Header/index'
-import Footer from './components/Footer/index'
-
+import Home from './pages/Home/index';
+import Apropos from './pages/Apropos/index';
+import Erreur404 from './pages/Erreur404/index';
+import Fichelogement from './pages/Fichelogement/index';
 
 export default function App(){
   return (
     <div className='App'>
   <BrowserRouter>
-    <Header/>
     <Routes>
-      <Route path ="/" element= {<Layout/>}/>
-      <Route path="/" element={<Home />} />
-      <Route path="/Apropos" element={<Apropos />} />
-      <Route path="/Fichelogement" element={<Fichelogement />} />
-      <Route path="*" element={<Erreur404 />} />
+      <Route path ="/" element= {<Layout/>}>
+        <Route index element={<Home />} />
+        <Route path="/Apropos" element={<Apropos />} />
+        <Route path="/Fichelogement" element={<Fichelogement />} />
+        <Route path="*" element={<Erreur404 />} />
+      </Route>    
     </Routes>
-    <Footer/>
     </BrowserRouter>
     </div>
   );
