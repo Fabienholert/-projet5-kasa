@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './layout'
 import Home from '../src/components/pages/Home/index';
 import Apropos from '../src/components/pages/Apropos/index';
 import Erreur404 from '../src/components/pages/Erreur404/index';
@@ -13,6 +14,7 @@ export default function App(){
   <BrowserRouter>
     <Header/>
     <Routes>
+      <Route path ="/" element= {<Layout/>}/>
       <Route path="/" element={<Home />} />
       <Route path="/Apropos" element={<Apropos />} />
       <Route path="/Fichelogement" element={<Fichelogement />} />
