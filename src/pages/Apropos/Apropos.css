@@ -17,7 +17,9 @@ main {
 .detailApropos{
     display: flex;
     flex-direction: column;
-    gap:30px
+    gap:30px;
+    padding-bottom: 30px;
+    
 }
 
 .detailApropos summary{
@@ -39,7 +41,9 @@ main {
 .detailApropos details div{
     width: 1000px;
     margin-left:220px;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 100;
     display: flex;
     flex-wrap: wrap;
 }

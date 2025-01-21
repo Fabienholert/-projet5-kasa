@@ -1,17 +1,18 @@
 .Header {
+    width: 1240px;
     display : flex;
     flex-direction: row;
     justify-content:space-between;
-    padding: 10px;
     align-items: center;
+    margin-left:100px ;
 }
 
 .Header nav a{
     text-decoration: none;
-    font-family: montserra;
+    font-family: "montserrat";
     color: black;
     padding: 20px;
-    size:24px
+    font-size:24px
 }
 
 .Header nav a:hover{
