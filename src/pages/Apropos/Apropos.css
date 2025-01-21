@@ -12,6 +12,7 @@ main {
     margin-top: 30px;
     margin-left: 100px;
     margin-bottom: 30px;
+    mix-blend-mode: darken 30%;
 }
 
 .detailApropos{

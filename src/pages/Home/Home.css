@@ -1,0 +1,24 @@
+.imageHome {
+    width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    mix-blend-mode: darken;
+    z-index: -1;
+}
+
+.textehome{
+    position: absolute;
+    top:200px;  
+    left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: ; /* Ajustez la taille du texte selon vos préférences */
+  color: white; /* Couleur du texte */
+  font-family: 'Montserrat', sans-serif; /* Choisissez la police désirée */
+  text-align: center;
+  padding: 10px;
+
+}
