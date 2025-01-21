@@ -15,7 +15,7 @@
     top:200px;  
     left: 50%;
   transform: translate(-50%, -50%);
-  font-size: ; /* Ajustez la taille du texte selon vos préférences */
+  font-size: 24px ; /* Ajustez la taille du texte selon vos préférences */
   color: white; /* Couleur du texte */
   font-family: 'Montserrat', sans-serif; /* Choisissez la police désirée */
   text-align: center;
