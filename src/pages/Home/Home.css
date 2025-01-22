@@ -1,21 +1,11 @@
-.imageHome {
-    width: 1240px;
-    height: 223px;
-    object-fit: cover;
-    border-radius: 25px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-bottom: 30px;
-    mix-blend-mode: darken;
-    z-index: -1;
-}
-
 .textehome{
     position: absolute;
     top:215px;  
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
+    font-weight: 700;
     color: white; 
     font-family: 'Montserrat';
+    -webkit-text-stroke: 1px black;
 }
