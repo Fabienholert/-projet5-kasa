@@ -1,6 +1,7 @@
 import Section from '../../components/Section/section'
 import  imageHome from'../../assets/imageHome.jpg'
 import './Home.css'
+import Card from '../../components/Card/index'
 
 export default function Home () {
     return (
@@ -11,7 +12,7 @@ export default function Home () {
             Chez vous, partout et ailleurs
         </div>
         </div>
-        <div>Card</div>
+        <Card/>
 
         </>
     )
