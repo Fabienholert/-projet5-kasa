@@ -12,13 +12,10 @@
 
 .textehome{
     position: absolute;
-    top:200px;  
+    top:215px;  
     left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px ; /* Ajustez la taille du texte selon vos préférences */
-  color: white; /* Couleur du texte */
-  font-family: 'Montserrat', sans-serif; /* Choisissez la police désirée */
-  text-align: center;
-  padding: 10px;
-
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white; 
+    font-family: 'Montserrat';
 }

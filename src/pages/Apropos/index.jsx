@@ -1,4 +1,5 @@
-import Imageapropos from'../../assets/Imageapropos.jpg'
+import imageApropos from '../../assets/imageapropos.jpg'
+import Section from '../../components/Section/section'
 import './Apropos.css'
 
 export default function Apropos() {
@@ -6,7 +7,7 @@ export default function Apropos() {
         <>
         
         <div>
-            <img src= {Imageapropos} alt = 'image de montage et  de ruisseau ' className='imageapropos' />
+        <Section imgSrc={imageApropos} alt="Image de la page d'accueil" />
         <div className="detailApropos">
            <details><summary>Fiabilité</summary><div>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</div></details>
            <details><summary>Respect</summary><div>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</div></details>

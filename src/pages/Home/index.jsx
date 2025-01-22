@@ -1,11 +1,12 @@
-import imageHome from '../../assets/imageHome.jpg'
+import Section from '../../components/Section/section'
+import  imageHome from'../../assets/imageHome.jpg'
 import './Home.css'
 
 export default function Home () {
     return (
         <>
         <div>
-        <img src= {imageHome} alt = 'image en fond d écran représentant des rochers' className='imageHome' />
+        <Section imgSrc={imageHome} alt="Image de la page d'accueil" />
         <div className='textehome'>
             Chez vous, partout et ailleurs
         </div>
