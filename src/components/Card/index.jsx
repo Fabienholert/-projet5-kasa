@@ -11,8 +11,6 @@ function Card(props) {
     );
   }
 
-
-
 export default function Cards() {
     return (
       <div className="container-card">
@@ -22,5 +20,7 @@ export default function Cards() {
       </div>
     );
  }
+
+ 
 
 
