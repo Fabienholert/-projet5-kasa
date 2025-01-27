@@ -5,13 +5,13 @@ import './header.css'
 
 export default function Header () {
     return (
-        <div className='Header'>
+        <header className='Header'>
             <img src= {Logor} alt = 'logo Kasa en rouge' className='logo-rouge' />
             <nav>
                     <NavLink to="/"> Accueil </NavLink>
                     <NavLink to="/Apropos"> A Propos </NavLink>      
             </nav>
 
-        </div>
+        </header>
     )
 }

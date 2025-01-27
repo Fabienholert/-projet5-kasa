@@ -1,5 +1,4 @@
  import data from '../../assets/logement.json'
- import ficheLogement from '../../pages/Fichelogement/index';
  import './card.css'
 
 function Card(props) {
@@ -10,8 +9,7 @@ function Card(props) {
       </div>
     );
   }
-
-export default function Cards() {
+  export default function Cards() {
     return (
       <div className="container-card">
           {data.map((card, index) => (
@@ -20,6 +18,7 @@ export default function Cards() {
       </div>
     );
  }
+
 
  
 
