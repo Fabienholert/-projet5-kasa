@@ -1,14 +1,15 @@
 
 import {Link} from 'react-router-dom' 
+import './erreur404.css'
 
 
 export default function Error404() {
     return (
         <>
 
-        <div className=''>
+        <h2 >
             404
-        </div>
+        </h2>
         <p>
             Oups! La page que vous demandez n'existe pas.
         </p>

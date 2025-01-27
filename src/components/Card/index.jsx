@@ -1,4 +1,5 @@
  import data from '../../assets/logement.json'
+ import ficheLogement from '../../pages/Fichelogement/index';
  import './card.css'
 
 function Card(props) {
@@ -21,3 +22,5 @@ export default function Cards() {
       </div>
     );
  }
+
+
