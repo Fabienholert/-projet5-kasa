@@ -1,14 +1,22 @@
-import data from '../../assets/logement.json'
+import data from '../../assets/logement.json';
+import Collapse from '../../components/Collapse/Collapse';
 
+const informations= data
 
-
-export default function ficheLogement(props) {
-    return (
-        <div>
-            <img src = {props.pictures} alt = "" className='carroussel'/>
-        </div>)};        
-           <div>
-          {data.map((ficheLogement, index) => (
-              <ficheLogement key={index}  title={ficheLogement.title} location={ficheLogement.location} host={ficheLogement.host} rating={ficheLogement.rating} tag={ficheLogement.tag} description={ficheLogement.description} equipment={ficheLogement.equipment}  />
-          ))}
-      </div>
+export default function FicheLogement({pictures, title, location, host, rating, tag, description, equipments }) {
+  return (
+    <div key={informations.id}>
+    
+        
+            <img src={pictures} alt={title} className='carroussel'/>
+        
+      <h2>{informations.title}</h2>
+      <p>Location: {informations.location}</p>
+      <p>Host: {informations.host.name}</p>
+      <p>Rating: {informations.rating}</p>
+        <p>tag: {informations.tag}</p>
+      <Collapse>description {informations.description}</Collapse>
+      <Collapse>equipements {informations.equipments}</Collapse>
+    </div>
+  );
+}

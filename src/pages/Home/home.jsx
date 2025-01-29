@@ -17,7 +17,7 @@ export default function Home() {
               {logements.map((logement) => (
                   <Card
                       key={logement.id}
-                      to={`/ficheLogement/`}
+                      to={`/ficheLogement/${logement.id}`}
                   >
                       <img src={logement.cover} alt={logement.title} />
                       <h3 className='card-title'>{logement.title}</h3>
