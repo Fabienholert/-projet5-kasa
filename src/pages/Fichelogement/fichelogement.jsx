@@ -7,7 +7,7 @@ export default function ficheLogement(props) {
         <div>
             <img src = {props.pictures} alt = "" className='carroussel'/>
         </div>)};        
-           <div className="container-card">
+           <div>
           {data.map((ficheLogement, index) => (
               <ficheLogement key={index}  title={ficheLogement.title} location={ficheLogement.location} host={ficheLogement.host} rating={ficheLogement.rating} tag={ficheLogement.tag} description={ficheLogement.description} equipment={ficheLogement.equipment}  />
           ))}

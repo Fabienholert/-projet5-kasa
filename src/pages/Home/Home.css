@@ -15,3 +15,37 @@ main{
     width: 1440px;
     margin-left: 0px;
 }
+
+.container-card{
+    width: 1240px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    background: #f6f6f6;
+    border-radius: 25px;
+}
+
+.card{
+    border-radius: 30px;
+    border: 10px;
+    padding:30px;
+    margin-left: 10px;
+}
+
+.card img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.card-title{
+    color:white;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate(-10px, -150px); 
+}
