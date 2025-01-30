@@ -1,5 +1,5 @@
-import arrowprev from '../../src/assets/arrowprev'
-import arrownext from '../../src/assets/arrownext'
+import arrowprev from '../../assets/arrowprev.png'
+import arrownext from '../../assets/arrownext.png'
 
 export default function caroussel (){
     return (
