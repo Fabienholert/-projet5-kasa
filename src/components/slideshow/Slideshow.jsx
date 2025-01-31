@@ -3,7 +3,7 @@ import arrownext from '../../assets/arrownext.png'
 
 export default function caroussel (){
     return (
-    <div>
+    <div className='Slideshow'>
         <img src ={arrowprev} alt = '' className='' />
         
         <img src ={arrownext} alt = '' className='' />
