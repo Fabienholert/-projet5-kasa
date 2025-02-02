@@ -1,9 +1,10 @@
 import arrowprev from '../../assets/arrowprev.png'
 import arrownext from '../../assets/arrownext.png'
+import {useState} from "react"
 
 
 export default function Slideshow({ images }) {
-    const [currentIndex, setCurrentIndex] = useState(index);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
