@@ -14,15 +14,17 @@ export default function Fichelogement() {
   }
   return (
     <div >
-      {logements.map ((logement) =>(
         <div key={logement.id}>   
           <Slideshow images={logement.pictures}/>
       <p>{logement.location}</p>
       <p className='rating'>{logement.rating}</p>
-      <Tag>{logement.tags}</Tag>
+      <div>
+      {logement.tags.map((tag, index) => (
+      <Tag key={index} tagName={tag} />
+      ))}
+      </div>
       <Collapse title="Description"> {logement.description}</Collapse>
       <Collapse title="Équipements" > {logement.equipments}</Collapse>
       </div>
-      ))}
     </div>
   )}
