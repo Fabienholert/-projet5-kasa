@@ -9,8 +9,8 @@ export default function Fichelogement() {
   return (
     <div >
       {logements.map ((logement) =>(
-        <div key={logement.id}>
-      <Slideshow > <img src={logement.pictures} alt={logement.title} className='carroussel'/> </Slideshow>
+        <div key={logement.id}>   
+          <Slideshow images={logement.pictures}/>
       <p>{logement.location}</p>
       <p className='rating'>{logement.rating}</p>
       <Tag>{logement.tags}</Tag>
