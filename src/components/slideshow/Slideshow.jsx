@@ -23,7 +23,12 @@ export default function Slideshow({ images }) {
                     <p>Aucune image disponible</p>
                 )}
             </div>
-            {images && images.length > 1 && (
+            {images.length > 1 && (
+                            <div className="image-counter">
+                                {currentIndex + 1} / {images.length}
+                            </div>
+                        )}
+            {images.length > 1 && (
             <div className="slideshow-controls">
                 <button onClick={handlePrev}><img src= {arrowprev}/></button>
                 <button onClick={handleNext}><img src= {arrownext}/></button>
