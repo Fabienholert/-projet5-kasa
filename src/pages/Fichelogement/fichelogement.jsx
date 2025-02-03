@@ -16,7 +16,12 @@ export default function Fichelogement() {
     <div >
         <div key={logement.id}>   
           <Slideshow images={logement.pictures}/>
+      <p>{logement.title}</p>
       <p>{logement.location}</p>
+      <div className="host-info">
+        <p>{logement.host.name}</p>
+        <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
+      </div>
       <p className='rating'>{logement.rating}</p>
       <div>
       {logement.tags.map((tag, index) => (
