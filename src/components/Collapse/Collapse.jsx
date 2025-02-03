@@ -3,7 +3,7 @@ import arrowdown from '../../assets/arrowdown.png';
 import arrowup from '../../assets/arrowup.png';
 
 
-export default function Collapse({ title, children }) {
+export default function Collapse(props ) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -13,10 +13,10 @@ export default function Collapse({ title, children }) {
   return (
     <div className="collapse-container">
       <button className='collapsetitle' onClick={toggleCollapse}>
-        {title}
+        {props.title}
         <img src={isOpen ? arrowdown : arrowup} alt="arrow" className='arrow' />
       </button>
-      {isOpen && <div className="collapsecontent">{children}</div>}
+      {isOpen && <div className="collapsecontent">{props.children}</div>}
     </div>
   );
 }

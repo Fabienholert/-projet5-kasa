@@ -14,7 +14,7 @@ export default function Fichelogement() {
   }
   return (
     <div >
-        <div key={logement.id}>   
+        <div>   
           <Slideshow images={logement.pictures}/>
       <p>{logement.title}</p>
       <p>{logement.location}</p>

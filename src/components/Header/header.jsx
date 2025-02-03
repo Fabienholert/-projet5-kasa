@@ -1,6 +1,6 @@
 import {NavLink} from 'react-router-dom' 
 import Logor from '../../assets/Logorouge.png'
-import './header.css'
+import './header.scss'
 
 
 export default function Header () {

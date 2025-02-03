@@ -1,6 +1,6 @@
 import imageApropos from '../../assets/imageapropos.jpg'
 import Section from '../../components/Section/section'
-import './Apropos.css'
+import './Apropos.scss'
 import Collapse from '../../components/Collapse/Collapse'
 import detailsapropos from '../../assets/apropos.json'
 
