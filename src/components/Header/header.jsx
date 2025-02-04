@@ -8,8 +8,8 @@ export default function Header () {
         <header className='header'>
             <img src= {Logor} alt = 'logo Kasa en rouge' className='header__logo' />
             <nav className='header__nav'>
-                    <NavLink to="/" className='header__link'> Accueil </NavLink>
-                    <NavLink to="/Apropos" className='header__link'> A Propos </NavLink>      
+                    <NavLink to="/" className='header__link'> Accueil</NavLink>
+                    <NavLink to="/Apropos" className='header__link'> A Propos</NavLink>      
             </nav>
 
         </header>
