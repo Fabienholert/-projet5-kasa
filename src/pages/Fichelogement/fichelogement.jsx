@@ -1,15 +1,15 @@
-import data from '../../assets/logement.json';
+import logements from '../../assets/logement.json';
 import Collapse from '../../components/Collapse/Collapse';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tags';
 import { useParams } from "react-router-dom";
 import {Link} from 'react-router-dom' 
 
-const logements= data
+
 
 export default function Fichelogement() {
   const { id } = useParams();
-  const logement = data.find((item) => item.id === id);
+  const logement = logements.find((item) => item.id === id);
   if (!logement) {
     return <Link to="/erreur404"></Link>;
   }

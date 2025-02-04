@@ -7,13 +7,13 @@ export default function Error404() {
     return (
         <>
 
-        <h2 >
+        <h2 className='error__title'>
             404
         </h2>
-        <p>
+        <p className='error__text'>
             Oups! La page que vous demandez n'existe pas.
         </p>
-        <Link to="/"> Retournez sur la page d accueil </Link>
+        <Link to="/" className='error__link'> Retournez sur la page d accueil </Link>
 
         </>
     )

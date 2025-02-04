@@ -5,9 +5,9 @@ import './header.scss'
 
 export default function Header () {
     return (
-        <header className='Header'>
-            <img src= {Logor} alt = 'logo Kasa en rouge' className='logo-rouge' />
-            <nav>
+        <header className='header'>
+            <img src= {Logor} alt = 'logo Kasa en rouge' className='header__logo' />
+            <nav className='header__link'>
                     <NavLink to="/"> Accueil </NavLink>
                     <NavLink to="/Apropos"> A Propos </NavLink>      
             </nav>

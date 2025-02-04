@@ -1,26 +1,45 @@
-h2{
+.error__title{
     font-size: 228px;
     margin-bottom: 10px;
     color:#ff6060;
+    font-family: 'Montserrat';
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+}
+@media (min-width: 370px) and (max-width: 600px){
+    .error__title {
+        font-size: 96px;
+    }
 }
 
-main p{
+.error__text{
     font-size: 36px;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color:#ff6060;
-
+    font-family: 'montserrat';
+}
+@media (min-width: 370px) and (max-width: 600px){
+    .error__text {
+        font-size: 18px;
+    }
 }
 
-a{
+.error__link{
     font-size: 18px;
     padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+}
+@media (min-width: 370px) and (max-width: 600px){
+    .error__link {
+        font-size: 14px;
+    }
 }
