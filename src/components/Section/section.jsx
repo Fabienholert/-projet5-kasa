@@ -1,7 +1,9 @@
 import './section.scss'
 function Section(props) {
     return (
-      <img src={props.imgSrc} alt={props.alt} className="sectionimage"/>
+      <div className ='section' >
+      <img src={props.imgSrc} alt={props.alt} className="section__image"/>
+      </div>
     );
   }
   
