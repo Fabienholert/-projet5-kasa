@@ -1,6 +1,7 @@
 import Section from '../../components/Section/section';
 import imageHome from '../../assets/imageHome.jpg';
 import './Home.scss';
+import '../../components/Card/Card.scss'
 import Card from '../../components/Card/Card';
 import logements from '../../assets/logement.json';
 
