@@ -1,0 +1,22 @@
+.collapse__title{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.collapse__arrow{
+    font-size:medium;
+    @media (min-width: 370px) and (max-width: 600px){
+    width: 16px;
+    height: 9px ; 
+}}
+
+
+@keyframes spin {
+        0% { transform: rotate(0)}
+        100% { transform: rotate(-180deg) }
+      }
+      
+      .collapse__arrow {
+        animation: spin 0.8s ease-in-out ;
+      }

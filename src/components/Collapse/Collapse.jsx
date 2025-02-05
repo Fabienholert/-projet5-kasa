@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import arrowdown from '../../assets/arrowdown.png';
+
 import arrowup from '../../assets/arrowup.png';
 import'./collapse.scss'
 
@@ -15,7 +15,7 @@ export default function Collapse(props ) {
     <div className="collapse__container">
       <button className='collapse__title' onClick={toggleCollapse}>
         {props.title}
-        <img src={isOpen ? arrowdown : arrowup} alt="arrow" className='arrow' />
+        <img src={arrowup} alt="arrow" className='collapse__arrow' />
       </button>
       {isOpen && <div className="collapse__content">{props.children}</div>}
     </div>
