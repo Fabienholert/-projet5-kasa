@@ -5,4 +5,7 @@
     border: 10px;
     padding:30px;
     margin-left: 10px;
-}
+    @media (min-width: 370px) and (max-width: 600px){
+    width: 335px;
+    height: 255px;
+}}
