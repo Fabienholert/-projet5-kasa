@@ -38,6 +38,7 @@
         
 }}
 &__content p {
+    margin: 15px;
     @media (min-width: 370px) and (max-width: 600px){
     margin-left: 25px;
     width: 300px;
