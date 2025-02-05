@@ -1,13 +1,13 @@
 .sectionimage {
-    display: flex;
-    width: 1240px;
-    height: 223px;
-    object-fit: cover;
-    border-radius: 25px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-bottom: 30px;
-    @media (min-width: 370px) and (max-width: 600px){
-    width: 335px;
-    height: 111px;
+display: flex;
+width: 1240px;
+height: 223px;
+object-fit: cover;
+border-radius: 25px;
+margin-top: 30px;
+margin-left: 100px;
+margin-bottom: 30px;
+@media (min-width: 370px) and (max-width: 600px){
+width: 335px;
+height: 111px;
 }}
