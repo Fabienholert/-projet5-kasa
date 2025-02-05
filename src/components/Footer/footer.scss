@@ -1,4 +1,4 @@
-.Footer {
+.footer {
     background: black;
     color: white;
     display : flex;
@@ -10,3 +10,12 @@
 .footer__logo{
     width: 122px;
 };
+
+.footer__text{
+    font-size:24px ;
+    @media (min-width: 370px) and (max-width: 600px){
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}}
