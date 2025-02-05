@@ -32,6 +32,16 @@
     font-size: 18px;
     flex-direction: row;
     flex-wrap: wrap;
+    @media (min-width: 370px) and (max-width: 600px){
+    width: 335px;
+    font-size: 13px;
+        
+}}
+&__content p {
+    @media (min-width: 370px) and (max-width: 600px){
+    margin-left: 25px;
+    width: 300px;
+}
 }}
 .sectionimage{
     filter: brightness(70%);
@@ -43,4 +53,5 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-}
+    @media (min-width: 370px) and (max-width: 600px){
+}}
