@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import arrowup from '../../assets/arrowup.png';
 import'./collapse.scss'
 
@@ -10,14 +9,20 @@ export default function Collapse(props ) {
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };
-
+  
   return (
     <div className="collapse__container">
       <button className='collapse__title' onClick={toggleCollapse}>
         {props.title}
-        <img src={arrowup} alt="arrow" className='collapse__arrow' />
+        <img
+          src={arrowup}
+          alt="arrow"
+          className={`collapse__arrow ${isOpen ? 'collapse__arrow--rotated' : ''}`}
+        />
       </button>
-      {isOpen && <div className="collapse__content">{props.children}</div>}
+      <div className={`collapse__content ${isOpen ? 'collapse__content--open' : ''}`}>
+        {props.children}
+      </div>
     </div>
   );
 }
