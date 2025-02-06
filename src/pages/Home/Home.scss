@@ -1,4 +1,4 @@
-.home__container-card{
+.home__container{
 width: 1240px;
 display: flex;
 align-items: center;
@@ -13,14 +13,40 @@ flex-direction: column;
 }}
 }
 
+.home__container-card{
+    width: 1240px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    margin-left: 200px;
+}
+
 .home__texte{
 
 }
 
 .home__card{
+    width: 340px ;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.home__card img{
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .home__card-title{
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
