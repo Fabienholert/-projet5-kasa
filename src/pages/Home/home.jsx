@@ -8,19 +8,19 @@ import logements from '../../assets/logement.json';
 export default function Home() {
   return (
     <>
-      <div className="container-card">
+      <div className="home__container-card">
           <Section imgSrc={imageHome} alt="Image de la page d'accueil" />
-          <div className="textehome">
+          <div className="home__texte">
               Chez vous, partout et ailleurs
           </div>
-          <div className="card-container">
+          <div className="home__card">
               {logements.map((logement) => (
                   <Card
                       key={logement.id}
                       to={`/ficheLogement/${logement.id}`}
                   >
                       <img src={logement.cover} alt={logement.title} />
-                      <h3 className='card-title'>{logement.title}</h3>
+                      <h3 className='home__card-title'>{logement.title}</h3>
                   </Card>
               ))}
           </div>
