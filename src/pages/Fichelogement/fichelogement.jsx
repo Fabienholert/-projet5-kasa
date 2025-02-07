@@ -14,23 +14,24 @@ export default function Fichelogement() {
     return <Link to="/erreur404"></Link>;
   }
   return (
-    <div >
-        <div>   
-          <Slideshow images={logement.pictures}/>
-      <p>{logement.title}</p>
-      <p>{logement.location}</p>
-      <div className="host-info">
-        <p>{logement.host.name}</p>
-        <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
-      </div>
-      <p className='rating'>{logement.rating}</p>
-      <div>
-      {logement.tags.map((tag, index) => (
-      <Tag key={index} tagName={tag} />
-      ))}
-      </div>
-      <Collapse title="Description"> {logement.description}</Collapse>
-      <Collapse title="Équipements" > {logement.equipments}</Collapse>
-      </div>
+    <div className='fichelogement'> 
+            <Slideshow images={logement.pictures}/>
+
+              <p className='fichelogement__title'>{logement.title}</p>
+              <p className='fichelogement__localisation'>{logement.location}</p>
+            <div className="fichelogement__info">
+              <p>{logement.host.name}</p>
+              <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
+            </div>
+              <p className='fichelogement__rating'>{logement.rating}</p>
+          <div className='fichelogement__tag'>
+              {logement.tags.map((tag, index) => (
+              <Tag key={index} tagName={tag} />
+              ))}
+          </div>
+          <div className='fichelogement__collapse'>
+            <Collapse title="Description"> {logement.description}</Collapse>
+            <Collapse title="Équipements" > {logement.equipments}</Collapse>
+          </div>
     </div>
   )}
