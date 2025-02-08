@@ -1,13 +1,13 @@
 .header {
+    width: 1240px;
     display : flex;
     justify-content:space-between;
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-
 @media (min-width: 370px) and (max-width: 600px){
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 335px;
+    margin-left: -10px;
 }
 }
 .header__nav{
@@ -19,10 +19,14 @@
     color: black;;
     font-size:24px;
     text-decoration: none;
-    padding-left: 30px;
+    padding-left: 100px;
+    margin-right: 10px;
     @media (min-width: 370px) and (max-width: 600px){
-    font-size:16px; 
+    font-size:12px; 
     font-weight: 500;
+    padding-left: 0px;
+    margin-right: 25px;
+    text-transform: uppercase;
 }}
 
 .header__link:hover{
@@ -33,6 +37,7 @@
     width: 210px;
     height: 68px;
     @media (min-width: 370px) and (max-width: 600px){
+        margin-left: -20px;
         width: 145px;
         height: 47px;
     }
