@@ -1,6 +1,42 @@
 .fichelogement{
+width: 1240px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+.slideshow {
 
-.slideshow{
-
+}
+.slideshow-content img{
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit:cover;
+    @media (min-width: 370px) and (max-width: 600px){
+    width: 335px ;
+    height: 255px;
     }
+}};
+
+.fichelogement__title{
+
 };
+
+.fichelogement__localisation{
+
+};
+
+.fichelogement__info{
+
+};
+
+.fichelogement__rating{
+
+};
+
+.fichelogement__tag{
+
+};
+
+.fichelogement__collapse{
+
+}

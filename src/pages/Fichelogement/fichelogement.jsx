@@ -4,6 +4,7 @@ import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tags';
 import { useParams } from "react-router-dom";
 import {Link} from 'react-router-dom' 
+import './fichelogement.scss'
 
 
 
