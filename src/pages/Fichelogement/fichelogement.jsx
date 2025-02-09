@@ -32,7 +32,13 @@ export default function Fichelogement() {
           </div>
           <div className='fichelogement__collapse'>
             <Collapse title="Description"> {logement.description}</Collapse>
-            <Collapse title="Équipements" > {logement.equipments}</Collapse>
+            <Collapse title="Équipements" >  
+                <ul>
+                  {logement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+            </Collapse>
           </div>
     </div>
   )}
