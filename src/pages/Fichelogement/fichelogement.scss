@@ -3,9 +3,58 @@ width: 1240px;
 display: flex;
 justify-content: center;
 flex-direction: column;
-.slideshow {
 
+.slideshow {
+    margin-top: 163px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 190px;
+    @media (min-width: 370px) and (max-width: 600px){
+    margin-top: 30px;
+    margin-right:960px;
+}}
+
+.image-counter{
+    position : relative;
+    bottom: 50px;
+    right: 20px;
+    transform: translate(50%, 50%);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    @media (min-width: 370px) and (max-width: 600px){
+    display: none;
+}}
+
+
+
+.slideshow-controls {
+    position : relative;
+    bottom: 340px;
+    right: 590px;
+    transform: translate(50%, 50%);
+    height: 119px;
+    display: flex;
+    border: none;
+    gap:1050px;
+    @media (min-width: 370px) and (max-width: 600px){
+    gap:265px;
+    bottom: 250px;
+    right: 160px;
+        }
 }
+
+.slideshow-controls button{
+    border: none;
+    background: none;
+}
+
+.slideshow-controls img{
+    @media (min-width: 370px) and (max-width: 600px){
+        height: 24px;
+}}
+
 .slideshow-content img{
     width: 1240px;
     height: 415px;
