@@ -100,12 +100,26 @@
     font-size: 13px;
     }};
 
-.collapse__content--open{
+.collapse__content{
     width: 582px;
+    height: 272px;
+    background: #f6f6f6;
+    font-size: 18px;
+    border-radius: 5px;
     @media (min-width: 370px) and (max-width: 600px){
     width: 335px;
-    
-}};
+    height: 181px;
+    font-size: 12px;
+    }};
+
+.collapse__content li{
+    list-style-type: none;
+    margin-left: -15px;
+};
+
+.fichelogement_collapse--texte{
+    margin: 15px;
+}
 
 .fichelogement__title{
     margin-top: -100px;
