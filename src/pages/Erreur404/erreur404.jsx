@@ -1,6 +1,6 @@
-
 import {Link} from 'react-router-dom' 
 import './erreur404.scss'
+import '../../assets/variable.scss'
 
 
 export default function Error404() {

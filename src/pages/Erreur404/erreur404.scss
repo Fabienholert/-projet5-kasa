@@ -1,7 +1,7 @@
 .error__title{
     font-size: 228px;
     margin-bottom: 10px;
-    color:#ff6060;
+    color:$Red;
     font-family: 'Montserrat';
     font-weight: 700;
     display: flex;
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#ff6060;
+    color:$red;
     font-family: 'montserrat';
     @media (min-width: 370px) and (max-width: 600px){
     width: 260px;
