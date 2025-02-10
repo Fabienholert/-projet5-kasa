@@ -1,6 +1,7 @@
 import logements from '../../assets/logement.json';
 import Collapse from '../../components/Collapse/Collapse';
 import Slideshow from '../../components/Slideshow/Slideshow';
+import Rating from '../../components/Rating/rating';
 import Tag from '../../components/Tag/Tags';
 import { useParams } from "react-router-dom";
 import {Link} from 'react-router-dom' 
@@ -24,7 +25,7 @@ export default function Fichelogement() {
               <p className='fichelogement__info--texte'>{logement.host.name}</p>
               <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
             </div>
-              <p className='fichelogement__rating'>{logement.rating}</p>
+            <Rating rating={parseInt(logement.rating, 10)} />
           <div className='fichelogement__tag'>
               {logement.tags.map((tag, index) => (
               <Tag key={index} tagName={tag} />
