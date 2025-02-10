@@ -21,7 +21,7 @@ export default function Fichelogement() {
               <p className='fichelogement__title'>{logement.title}</p>
               <p className='fichelogement__localisation'>{logement.location}</p>
             <div className="fichelogement__info">
-              <p>{logement.host.name}</p>
+              <p className='fichelogement__info--texte'>{logement.host.name}</p>
               <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
             </div>
               <p className='fichelogement__rating'>{logement.rating}</p>
