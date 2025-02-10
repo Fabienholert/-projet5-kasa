@@ -4,6 +4,9 @@
     display : flex;
     justify-content:space-between;
     align-items: center;
+    justify-items: center;
+    max-width: 1240px;
+    margin: 25px 80px 25px 80px;
     @media (min-width: 370px) and (max-width: 870px){
     }
 
