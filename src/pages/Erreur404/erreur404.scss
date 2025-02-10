@@ -1,39 +1,34 @@
-.error__title{
-    font-size: 228px;
-    margin-bottom: 10px;
-    color: $Red;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    @media (min-width: 370px) and (max-width: 600px){
-    font-size: 96px; 
-}}
+@import '../../assets/variables';
 
-.error__text{
-    font-size: 36px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:$red;
-    font-family: 'montserrat';
-    @media (min-width: 370px) and (max-width: 600px){
-    width: 260px;
-    font-size: 18px;
-    padding-left: 100px
-}}
 
-.error__link{
-    font-size: 18px;
-    padding-bottom: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    @media (min-width: 370px) and (max-width: 600px){
-    font-size: 14px;
-}}
+.error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 
+    &__title{
+        font-size: 228px;
+        margin-bottom: 10px;
+        color: $red;
+        font-family: $police;
+        font-weight: 700;
+        @media (min-width: 370px) and (max-width: 870px){
+        font-size: 96px; 
+    }}
+
+    &__text{
+        font-size: 36px;
+        color: $red;
+        font-family: $police;
+        @media (min-width: 370px) and (max-width: 870px){
+        font-size: 18px;
+    }}
+
+    &__link{
+        font-size: 18px;
+        color: $black;
+        @media (min-width: 370px) and (max-width: 870px){
+        font-size: 14px;
+    }}
+}
