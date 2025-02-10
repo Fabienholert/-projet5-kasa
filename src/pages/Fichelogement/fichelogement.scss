@@ -4,6 +4,18 @@
     justify-content: center;
     flex-direction: column;
 
+    &__title{
+        margin-top: -100px;
+        margin-left: 100px;
+        font-size: 36px;
+        color:#ff6060;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        @media (min-width: 370px) and (max-width: 600px){
+        font-size:18px;
+        margin-left: 70px;
+    }};
+
 .slideshow {
     margin-top: 40px;
     display: flex;
@@ -36,16 +48,15 @@
     display: flex;
     border: none;
     gap:1050px;
-    @media (min-width: 370px) and (max-width: 600px){
+    @media (min-width: 370px) and (max-width: 870px){
     gap:265px;
     bottom: 250px;
     right: 160px;
         }
-}
-
-.slideshow-controls button{
-    border: none;
-    background: none;
+    button{
+        border: none;
+        background: none;
+        }
 }
 
 .slideshow-controls img{
@@ -121,17 +132,7 @@
     margin: 15px;
 }
 
-.fichelogement__title{
-    margin-top: -100px;
-    margin-left: 100px;
-    font-size: 36px;
-    color:#ff6060 ;
-    font-weight: 500;
-    font-family: 'Montserrat';
-    @media (min-width: 370px) and (max-width: 600px){
-    font-size:18px;
-    margin-left: 70px;
-}};
+
 
 .fichelogement__localisation{
     font-size: 18px;
@@ -170,7 +171,9 @@ gap: 10px;
 
 
 .fichelogement__rating{
-
+    position : relative;
+    left:1190px;
+    bottom: 100px
 };
 
 .fichelogement__tag{

@@ -24,7 +24,7 @@
 .collapse__content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  transition: max-height 0.3s ease, opacity 0.5s ease, transform 0.3s ease;
   opacity: 0;
   transform: translateY(-20px);
 }

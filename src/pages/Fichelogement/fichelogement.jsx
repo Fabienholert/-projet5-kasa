@@ -3,8 +3,7 @@ import Collapse from '../../components/Collapse/Collapse';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Rating from '../../components/Rating/rating';
 import Tag from '../../components/Tag/Tags';
-import { useParams } from "react-router-dom";
-import {Link} from 'react-router-dom' 
+import {Navigate,  useParams } from "react-router-dom";
 import './fichelogement.scss'
 
 
@@ -13,7 +12,7 @@ export default function Fichelogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
   if (!logement) {
-    return <Link to="/erreur404"></Link>;
+    return <Navigate to="/erreur404"/>;
   }
   return (
     <div className='fichelogement'> 
