@@ -4,7 +4,6 @@ import Home from './pages/Home/home';
 import Apropos from './pages/Apropos/apropos';
 import Erreur404 from './pages/Erreur404/erreur404';
 import Fichelogement from './pages/Fichelogement/fichelogement';
-import '../src/assets/_variable.scss';
 
 export default function App(){
   return (
