@@ -1,11 +1,8 @@
 .card{
-    width: 340Px;
+    width: 33%;
     height: 340px;
     border-radius: 30px;
-    border: 10px;
-    padding:30px;
-    margin-left: 10px;
     @media (min-width: 370px) and (max-width: 870px){
-    width: 335px;
+    width: 90%;
     height: 255px;
 }}
