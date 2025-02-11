@@ -10,7 +10,7 @@ export default function Error404() {
             404
         </h2>
         <p className='error__text'>
-            <span>Oups! La page que </span> <span> vous demandez n'existe pas.</span>
+            <span>Oups! La page que </span> <span> vous demandez n&apos;existe pas.</span>
         </p>
         <Link to="/" className='error__link'> Retournez sur la page d accueil </Link>
         </div>
