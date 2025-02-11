@@ -1,9 +1,10 @@
+@import '../../assets/variables';
 .tag{
     color:white;
     border-radius:10px;
     width: 115px;
     height: 25px;
-    background: #ff6060;
+    background: $red;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -11,8 +12,8 @@
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'Montserrat';
-    @media (min-width: 370px) and (max-width: 600px){
+    font-family: $police;
+    @media (min-width: 370px) and (max-width: 870px){
     width: 84px;
     height: 18px;
     font-size: 10px;
