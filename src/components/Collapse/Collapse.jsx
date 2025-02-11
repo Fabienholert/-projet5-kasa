@@ -11,7 +11,7 @@ export default function Collapse(props ) {
   };
   
   return (
-    <div className="collapse__container">
+    <div className="collapse">
       <button className='collapse__title' onClick={toggleCollapse}>
         {props.title}
         <img

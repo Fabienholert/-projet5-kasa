@@ -1,36 +1,77 @@
-.collapse__title{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
+@import '../../assets/variables';
 
-.collapse__arrow{
+.collapse{
+
+
+  &__title{
+    background: $red ;
+    border-radius: 5px;
+    border: none;
+    color:White;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-family: $police ;
+    @media (min-width: 370px) and (max-width: 870px){
+    width: 335px;
+    height: 30px;
+    font-size: 13px;
+    }
+};
+
+  &__arrow{
     font-size:medium;
     cursor: pointer;
-    @media (min-width: 370px) and (max-width: 600px){
+    @media (min-width: 370px) and (max-width: 870px){
     width: 16px;
     height: 9px ; 
-}}
+}};
 
+  &__arrow {
+    transition: transform 0.5s ease;
+  };
 
-.collapse__arrow {
-  transition: transform 0.5s ease;
-}
+  &__arrow--rotated {
+    transform: rotate(-180deg);
+  };
 
-.collapse__arrow--rotated {
-  transform: rotate(-180deg);
-}
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.5s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+  };
 
-.collapse__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.5s ease, transform 0.3s ease;
-  opacity: 0;
-  transform: translateY(-20px);
-}
+  &__content--open {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+  };
+    
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  &__content{
+    width: 1023px ;
+    background: #f6f6f6;
+    font-size: 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (min-width: 370px) and (max-width: 870px){
+    width: 335px;
+    font-size: 13px;
+            
+  }}
+  &__content p {
+    margin: 15px;
+    @media (min-width: 370px) and (max-width: 870px){
+    margin-left: 25px;
+    width: 300px;
+    }
+}};
 
-.collapse__content--open {
-  max-height: 500px;
-  opacity: 1;
-  transform: translateY(0);
-}
