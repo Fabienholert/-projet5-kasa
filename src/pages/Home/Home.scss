@@ -1,51 +1,28 @@
+@use '../../assets/variables' as vars;
+
 .home__container{
-width: 1240px;
-display: flex;
-align-items: center;
-flex-direction: column;
-@media (min-width: 370px) and (max-width: 600px){
-    width: 335px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 370px) and (max-width: 870px){
     margin:0px;
     display: flex;
     justify-content: center;
     align-items: center;
-}}
-
-.home__container .section{
-    display: flex;
-    justify-content: center;
-    margin-left: 200px;
-    @media (min-width: 370px) and (max-width: 600px){
-    align-items: center;
-    margin-right: 70px;
-}}
-
-.home__container .section img{
-    filter: brightness(30%)
-}
-
-.home__container .card{
-    @media (min-width: 370px) and (max-width: 600px){ 
-        margin-bottom: -40px;
-}}
-
+}};
 
 .home__container-card{
-    width: 1240px;
-    background: #f6f6f6;
+    background: vars.$grey;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 25px;
-    margin-left: 200px;
     margin-bottom: 50px;
-    @media (min-width: 370px) and (max-width: 600px){
-    width: 335px;
+    @media (min-width: 370px) and (max-width: 870px){
     background: none;
     flex-direction: column;
-    margin-top: -100px;
-    margin-right: 150px;
     }
 }
 
@@ -84,8 +61,7 @@ flex-direction: column;
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
-    @media (min-width: 370px) and (max-width: 600px){
-    width: 335px;
+    @media (min-width: 370px) and (max-width: 870px){
     height: 255px;
 }}
 
@@ -94,7 +70,5 @@ flex-direction: column;
     bottom: 80px;
     left: 2px;
     transform: translate(0%, 0%);
-    color: white;
-    @media (min-width: 370px) and (max-width: 600px){
-    width: 230px;
-}}
+    color: vars.$white;
+}

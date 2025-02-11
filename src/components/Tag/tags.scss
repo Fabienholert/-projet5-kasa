@@ -1,10 +1,10 @@
-@import '../../assets/variables';
+@use '../../assets/variables' as vars;
 .tag{
-    color:white;
+    color: vars.$white;
     border-radius:10px;
     width: 115px;
     height: 25px;
-    background: $red;
+    background: vars.$red;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: $police;
+    font-family: vars.$police;
     @media (min-width: 370px) and (max-width: 870px){
     width: 84px;
     height: 18px;

@@ -1,9 +1,9 @@
-@import '../../assets/variables';
+@use '../../assets/variables' as vars;
 
 .footer {
     height: 209px;
-    background: $black;
-    color: $white;
+    background: vars.$black;
+    color: vars.$white;
     display : flex;
     flex-direction: column;
     align-items: center;

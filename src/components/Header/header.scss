@@ -1,4 +1,4 @@
-@import '../../assets/variables';
+@use '../../assets/variables' as vars;
 
 .header {
     display: flex;
@@ -8,8 +8,6 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
-    @media (min-width: 370px) and (max-width: 870px){
-    };
 
     &__nav{
         text-decoration: none;
@@ -21,8 +19,8 @@
     };
 
     &__link{
-        font-family: "montserrat";
-        color: $black;;
+        font-family: vars.$police;
+        color: vars.$black;;
         font-size:24px;
         text-decoration: none;
         @media (min-width: 370px) and (max-width: 870px){

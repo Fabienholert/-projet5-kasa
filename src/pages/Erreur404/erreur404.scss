@@ -1,4 +1,4 @@
-@import '../../assets/variables';
+@use '../../assets/variables' as vars;
 
 
 .error {
@@ -12,17 +12,17 @@
     &__title{
         font-size: 228px;
         margin: 0px;
-        color: $red;
-        font-family: $police;
+        color: vars.$red;
+        font-family: vars.$police;
         font-weight: 700;
         @media (min-width: 370px) and (max-width: 870px){
         font-size: 96px; 
-    }}
+    }};
 
     &__text{
         font-size: 36px;
-        color: $red;
-        font-family: $police;
+        color: vars.$red;
+        font-family: vars.$police;
         text-align: center;
         flex-wrap: wrap;
         @media (min-width: 370px) and (max-width: 870px){
@@ -30,13 +30,13 @@
         margin-right: 50px;
         font-size: 18px;
         font-weight: 500;
-    }}
+    }};
 
     &__link{
         font-size: 18px;
-        color: $black;
+        color: vars.$black;
         margin-bottom: 113px;
         @media (min-width: 370px) and (max-width: 870px){
         font-size: 14px;
-    }}
-}
+    }};
+};

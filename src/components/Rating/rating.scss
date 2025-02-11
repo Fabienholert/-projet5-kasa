@@ -1,11 +1,13 @@
+@use '../../assets/variables' as vars;
+
 .fichelogement__rating {
     font-size: 24px;
 }
 
 .red-star {
-    color: #FF6060; 
+    color: vars.$red; 
 }
 
 .gray-star {
-    color: #E3E3E3;
+    color: vars.$grey;
 }
