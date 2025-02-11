@@ -1,21 +1,22 @@
 @import '../../assets/variables';
 
 .collapse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 
   &__title{
     background: $red ;
     border-radius: 5px;
     border: none;
-    color:White;
+    color:$white;
     font-size: 24px;
     display: flex;
     align-items: center;
     font-weight: 700;
     font-family: $police ;
     @media (min-width: 370px) and (max-width: 870px){
-    width: 335px;
-    height: 30px;
     font-size: 13px;
     }
 };
@@ -49,21 +50,14 @@
     opacity: 1;
     transform: translateY(0);
   };
-    
-  &__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-    
+
   &__content{
-    width: 1023px ;
-    background: #f6f6f6;
+    background: $grey;
+    border-radius: 5px;
     font-size: 18px;
     flex-direction: row;
     flex-wrap: wrap;
     @media (min-width: 370px) and (max-width: 870px){
-    width: 335px;
     font-size: 13px;
             
   }}

@@ -1,14 +1,15 @@
 @import '../../assets/variables';
 
 .header {
-    display : flex;
-    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-items: center;
-    max-width: 1240px;
-    margin: 25px 80px 25px 80px;
+    justify-content:space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
     @media (min-width: 370px) and (max-width: 870px){
-    }
+    };
 
     &__nav{
         text-decoration: none;
@@ -17,7 +18,7 @@
         @media (min-width: 370px) and (max-width: 870px){
         gap: 26px;
         }
-    }
+    };
 
     &__link{
         font-family: "montserrat";
@@ -28,11 +29,11 @@
         font-size:12px; 
         font-weight: 500;
         text-transform: uppercase;
-    }}
+    }};
 
     &__link:hover{
         text-decoration: underline;
-    }
+    };
 
     &__logo{
         width: 210px;
@@ -41,5 +42,5 @@
         width: 145px;
         height: 47px;
         }
-    }
-}
+    };
+};

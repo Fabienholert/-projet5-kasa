@@ -6,6 +6,7 @@
         flex-direction: column;
         align-items: center;
         gap:113px;
+        margin-top: 50px;
         
 
     &__title{
@@ -22,7 +23,11 @@
         font-size: 36px;
         color: $red;
         font-family: $police;
+        text-align: center;
+        flex-wrap: wrap;
         @media (min-width: 370px) and (max-width: 870px){
+        margin-left: 50px;
+        margin-right: 50px;
         font-size: 18px;
         font-weight: 500;
     }}
