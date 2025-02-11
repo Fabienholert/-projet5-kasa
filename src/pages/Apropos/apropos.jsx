@@ -16,7 +16,7 @@ export default function Apropos() {
                               <Collapse
                                   key={apropos.title}
                                   title={apropos.title}>
-                                 <p className='collapse__content--p'>{apropos.description}</p>
+                                 {apropos.description}
                                   </Collapse>
              ))}
             </div>

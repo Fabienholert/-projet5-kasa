@@ -24,12 +24,19 @@
         color: vars.$red;
         font-family: vars.$police;
         text-align: center;
-        flex-wrap: wrap;
         @media (min-width: 370px) and (max-width: 870px){
-        margin-left: 50px;
-        margin-right: 50px;
         font-size: 18px;
         font-weight: 500;
+    }};
+
+    &__text span{
+        @media (min-width: 370px) and (max-width: 870px){
+        display: block;
+    }};
+
+    &__text span:last-child{
+        @media (min-width: 370px) and (max-width: 870px){
+        margin-left:0px
     }};
 
     &__link{
