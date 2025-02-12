@@ -5,7 +5,7 @@
 
     &__texte{
         position: absolute;
-        top:25%;
+        top:33%;
         left:60%;
         transform: translate(-50%, -50%);
         width: 60%;
@@ -16,7 +16,7 @@
         font-weight: 700;
         font-family: vars.$police;
         @media (min-width: 370px) and (max-width: 870px){
-        top:18%;
+        top:22%;
         left:40%;
         font-size: 24px;
         font-weight: 700;
@@ -38,34 +38,44 @@
         margin: 50px auto;
         padding: 50px 0px 50px 0px;
         @media (min-width: 370px) and (max-width: 870px){
-        width: 100%;
-        margin: 0px;
+        margin: 0;    
+        padding: 0px;
+        width: 90%;
         background: none;
-        }
-        };
+        }};
 
     &__card{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 30px;
+        justify-content: center;
+        margin: 30px auto;
         gap: 30px;
-        };
+        @media (min-width: 370px) and (max-width: 870px){
+        justify-content: center;
+        flex-direction: column;
+        gap: 122px;
+        }};
+        
 
-    &__card a {
+    & a {
         text-decoration: none;
         };
 
     &__card img{
         width: 100%;
-        max-width: 340px;
         height: 340px;
         border-radius: 10px;
         object-fit: cover;
         };
     
     &__card-title{
-        transform: translate(0%, 0%);
+        width: 80%;
+        max-width: 300px;
+        transform: translate(4%, -210%);
         color: vars.$white;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: vars.$police;
         };
 };
