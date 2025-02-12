@@ -8,10 +8,10 @@ import logements from '../../assets/logement.json';
 export default function Home() {
   return (
     <>
-      <div className="home__container">
+      <div className="home">
           <Section imgSrc={imageHome} alt="Image de la page d'accueil" />
           <div className="home__texte">
-              Chez vous, partout et ailleurs
+              <span>Chez vous,</span> <span>partout et ailleurs</span>
           </div>
           <div className='home__container-card'>
           <div className="home__card">
