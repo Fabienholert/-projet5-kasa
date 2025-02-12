@@ -25,7 +25,7 @@ export default function Slideshow({ images }) {
                 )}
             </div>
             {images.length > 1 && (
-                            <div className="slideshow__image-counter">
+                            <div className="slideshow__counter">
                                 {currentIndex + 1} / {images.length}
                             </div>
                         )}

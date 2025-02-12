@@ -1,6 +1,33 @@
 @use '../../assets/variables' as vars;
 
 .slideshow {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 25px;
+
+    &__content img{
+    display: flex;
+    margin: 0 auto;
     width: 90%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
     @media (min-width: 370px) and (max-width: 870px){
-    }}
+    height: 255px;
+    }};
+
+    &__counter {
+    position: absolute;
+    top: 70%;
+    left:50%;
+    color: vars.$white;
+    @media (min-width: 370px) and (max-width: 870px){
+    display: none;
+    }};
+
+    &__controls{
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    }
+}
