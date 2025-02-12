@@ -23,6 +23,8 @@ export default function Home() {
                       <h3 className='home__card-title'>{logement.title}</h3>
                   </Card>
               ))}
+            <div className="home__card-event"></div>
+            <div className="home__card-event"></div>
           </div>
       </div>
     </>
