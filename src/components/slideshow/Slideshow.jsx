@@ -1,6 +1,7 @@
 import arrowprev from '../../assets/arrowprev.png'
 import arrownext from '../../assets/arrownext.png'
 import {useState} from "react"
+import './slideshow.scss'
 
 
 export default function Slideshow({ images }) {
@@ -16,7 +17,7 @@ export default function Slideshow({ images }) {
 
     return (
         <div className="slideshow">
-            <div className="slideshow-content">
+            <div className="slideshow__content">
                 {images && images.length > 0 ? (
                     <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className='carroussel'/>
                 ) : (
@@ -24,12 +25,12 @@ export default function Slideshow({ images }) {
                 )}
             </div>
             {images.length > 1 && (
-                            <div className="image-counter">
+                            <div className="slideshow__image-counter">
                                 {currentIndex + 1} / {images.length}
                             </div>
                         )}
             {images.length > 1 && (
-            <div className="slideshow-controls">
+            <div className="slideshow__controls">
                 <button onClick={handlePrev}><img src= {arrowprev}/></button>
                 <button onClick={handleNext}><img src= {arrownext}/></button>
             </div>

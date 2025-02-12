@@ -21,7 +21,7 @@ export default function Collapse(props ) {
         />
       </button>
       <div className={`collapse__content ${isOpen ? 'collapse__content--open' : ''}`}>
-      <p className='collapse__content-p'>  {props.children}</p>
+      <div className='collapse__content-p'>  {props.children}</div>
       </div>
     </div>
   );
