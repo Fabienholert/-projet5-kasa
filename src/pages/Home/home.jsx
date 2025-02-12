@@ -13,7 +13,6 @@ export default function Home() {
           <div className="home__texte">
               <span>Chez vous,</span> <span>partout et ailleurs</span>
           </div>
-          <div className='home__container-card'>
           <div className="home__card">
               {logements.map((logement) => (
                   <Card
@@ -24,7 +23,6 @@ export default function Home() {
                       <h3 className='home__card-title'>{logement.title}</h3>
                   </Card>
               ))}
-          </div>
           </div>
       </div>
     </>
