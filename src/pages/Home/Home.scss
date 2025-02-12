@@ -3,7 +3,6 @@
 .home{
     width: 100%;
 
-
     &__texte{
         position: absolute;
         top:25%;
@@ -23,11 +22,11 @@
         font-weight: 700;
         }}
 
-    &__text span{
+    & span{
         @media (min-width: 370px) and (max-width: 870px){
             display: block;
         }};
-    &__text span:last-child{
+    & span:last-child{
             @media (min-width: 370px) and (max-width: 870px){
             margin-left:0px
         }};
@@ -39,6 +38,8 @@
         margin: 50px auto;
         padding: 50px 0px 50px 0px;
         @media (min-width: 370px) and (max-width: 870px){
+        width: 100%;
+        margin: 0px;
         background: none;
         }
         };
