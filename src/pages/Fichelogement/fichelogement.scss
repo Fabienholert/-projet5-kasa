@@ -2,6 +2,10 @@
 
 .fichelogement {
     width: 100%;
+    margin-bottom: 30px;
+    @media (min-width: 370px) and (max-width: 870px){
+    margin-bottom: 10px;
+    };
 
     &__container{
     display: flex;
@@ -13,7 +17,7 @@
     @media (min-width: 370px) and (max-width: 870px){
     display: flex;
     flex-direction: column;
-    }
+    };
 
     &-left{
     display: flex;

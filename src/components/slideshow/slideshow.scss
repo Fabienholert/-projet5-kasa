@@ -4,6 +4,7 @@
     margin-top: 50px;
     width: 100%;
     border-radius: 25px;
+    margin-bottom: 30px;
 
     &__content img{
     display: flex;
@@ -17,15 +18,17 @@
     }};
 
     &__counter {
-    position: relative;
-    transform: translate(50%, -200%);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%); 
     color: vars.$white;
     @media (min-width: 370px) and (max-width: 870px){
     display: none;
     }};
 
     &__controls{
-    position: relative;
+    position: absolute;
     transform: translate(6%, -320%);
     display: flex;
     width: 89%;
