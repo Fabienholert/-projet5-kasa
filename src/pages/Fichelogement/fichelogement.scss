@@ -17,9 +17,11 @@
 
     &-left{
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     flex-direction: column;
-    }
+    @media (min-width: 370px) and (max-width: 870px){
+    width: 100%;
+    }};
 
     &-right{
     display: flex;
@@ -74,11 +76,38 @@
       };
 
     &__collapse{
-      display: inline-flex;
+      display:flex;
       flex-direction: row;
       margin-top: 20px;
+      width: 100%;
       @media (min-width: 370px) and (max-width: 870px){
       flex-direction: column;
     }
-    }
+    .collapse{
+      display: flex;
+      width: 50%;
+      margin: 0 auto;
+      flex-direction: column;
+      @media (min-width: 370px) and (max-width: 870px){
+      margin-bottom: 20px;
+      width: 100%;
+      }
+
+      &__title{
+      width: 80%;
+      @media (min-width: 370px) and (max-width: 870px){
+      width: 90%;
+      }
+
+      }
+      &__content{
+      width: 80%;
+      @media (min-width: 370px) and (max-width: 870px){
+      width: 90%;
+      }}
+
+      &__content li{
+      
+      }
+    }}
 }; 
