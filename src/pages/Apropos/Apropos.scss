@@ -1,1 +1,12 @@
 @use '../../assets/variables' as vars;
+
+.apropos__container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .collapse{
+    display: flex;
+    flex-direction: column;
+    }
+};

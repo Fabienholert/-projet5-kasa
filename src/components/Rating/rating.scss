@@ -2,12 +2,13 @@
 
 .fichelogement__rating {
     font-size: 24px;
-}
+    display: flex;
+    gap:10px
 
+}
 .red-star {
-    color: vars.$red; 
+    color: vars.$red;
 }
-
 .gray-star {
     color: vars.$grey;
 }

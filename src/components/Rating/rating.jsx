@@ -1,5 +1,6 @@
 import './rating.scss'
 
+
 const Rating = ({ rating, maxStars = 5 }) => {
     return (
         <div className="fichelogement__rating">
