@@ -3,19 +3,16 @@
 .tag{
     color: vars.$white;
     border-radius:10px;
-    width: 115px;
-    height: 25px;
     background: vars.$red;
     font-size: 14px;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-family: vars.$police;
+    padding: 10px 15px 10px 15px;
     @media (min-width: 370px) and (max-width: 870px){
-    width: 84px;
-    height: 18px;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
     font-size: 10px;
 }}
