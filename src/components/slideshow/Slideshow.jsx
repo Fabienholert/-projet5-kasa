@@ -31,8 +31,8 @@ export default function Slideshow({ images }) {
                         )}
             {images.length > 1 && (
             <div className="slideshow__controls">
-                <button onClick={handlePrev}><img src= {arrowprev}/></button>
-                <button onClick={handleNext}><img src= {arrownext}/></button>
+                <button onClick={handlePrev}><img src= {arrowprev} alt='précédent'/></button>
+                <button onClick={handleNext}><img src= {arrownext} alt='suivant'/></button>
             </div>
             )}
         </div>
