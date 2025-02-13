@@ -13,6 +13,7 @@ export default function Slideshow({ images }) {
 
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        
     };
 
     return (
@@ -24,7 +25,7 @@ export default function Slideshow({ images }) {
                     <p>Aucune image disponible</p>
                 )}
             </div>
-            {images.length > 1 && (
+        {images.length > 1 && (
                             <div className="slideshow__counter">
                                 {currentIndex + 1} / {images.length}
                             </div>
@@ -37,4 +38,4 @@ export default function Slideshow({ images }) {
             )}
         </div>
     );
-}
+};

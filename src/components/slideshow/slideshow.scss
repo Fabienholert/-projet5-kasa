@@ -34,15 +34,14 @@
     transform: translate(6%, -450%);
     }}
 
+
     &__controls button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            outline: none;
+    border: none;
+    background: none;
     };
 
     &__controls img{
     @media (min-width: 370px) and (max-width: 870px){
             height: 24px;
     }}
-}
+};
