@@ -17,6 +17,7 @@ export default function Fichelogement() {
   return (
     <div className='fichelogement'> 
             <Slideshow images={logement.pictures}/>
+            <div className='fichelogement__container'>
               <p className='fichelogement__title'>{logement.title}</p>
               <p className='fichelogement__localisation'>{logement.location}</p>
             <div className="fichelogement__info">
@@ -38,6 +39,7 @@ export default function Fichelogement() {
                   ))}
                 </div>
             </Collapse>
+            </div>
           </div>
     </div>
   )}
