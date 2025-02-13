@@ -17,7 +17,6 @@ export default function Fichelogement() {
   return (
     <div className='fichelogement'> 
             <Slideshow images={logement.pictures}/>
-
               <p className='fichelogement__title'>{logement.title}</p>
               <p className='fichelogement__localisation'>{logement.location}</p>
             <div className="fichelogement__info">
