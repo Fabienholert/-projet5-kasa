@@ -7,12 +7,20 @@
     display: flex;
     width: 90%;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: row;
     @media (min-width: 370px) and (max-width: 870px){
     display: flex;
     flex-direction: column;
-    }};
+    }
 
+    &-left{
+        width: 45%;
+    }
+
+    &-right{
+        width: 45%;
+    }
+    };
     &__title {
       font-weight: 500 ;
       font-size: 36px;
@@ -42,7 +50,7 @@
       }
     };
 
-      &__info--texte {
+    &__info--texte {
         display: flex;
         width: 80px;
         font-size: 18px;
@@ -51,6 +59,13 @@
         color: vars.$red;
         margin: 0%
       };
+
+    &__rating{
+        display: flex;
+        @media (min-width: 370px) and (max-width: 870px){
+        position: relative;
+        top:50%
+    }};
   
     &__collapse{
       display: flex;

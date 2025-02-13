@@ -27,11 +27,14 @@ export default function Fichelogement() {
               ))}
               </div>
             </div>
+            <div className='fichelogement__container-right'>
             <div className="fichelogement__info">
               <p className='fichelogement__info--texte'>{logement.host.name}</p>
               <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
             </div>
             <Rating rating={parseInt(logement.rating, 10)} />
+            </div>
+          </div>
           <div className='fichelogement__collapse'>
             <Collapse title="Description"> <div className='fichelogement_collapse--texte'>{logement.description}</div></Collapse>
             <Collapse title="Équipements" >  
@@ -41,7 +44,7 @@ export default function Fichelogement() {
                   ))}
                 </div>
             </Collapse>
-            </div>
+            
           </div>
     </div>
   )}
