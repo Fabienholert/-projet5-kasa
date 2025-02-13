@@ -17,17 +17,30 @@
     }};
 
     &__counter {
-    position: absolute;
-    top: 70%;
-    left:50%;
+    position: relative;
+    transform: translate(50%, -200%);
     color: vars.$white;
     @media (min-width: 370px) and (max-width: 870px){
     display: none;
     }};
 
     &__controls{
-    position:absolute;
+    position: relative;
+    transform: translate(6%, -320%);
     display: flex;
+    width: 89%;
     justify-content: space-between;
-    }
+    @media (min-width: 370px) and (max-width: 870px){
+    transform: translate(6%, -450%);
+    }}
+
+    &__controls button {
+    border: none;
+    background: none;
+    };
+
+    &__controls img{
+    @media (min-width: 370px) and (max-width: 870px){
+            height: 24px;
+    }}
 }
