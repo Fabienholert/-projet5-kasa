@@ -16,10 +16,8 @@
     justify-content: space-between;
     font-weight: 700;
     font-family: vars.$police;
-    width: 70%;
     padding: 10px;
     @media (min-width: 370px) and (max-width: 870px){
-    width: 90%;
     font-size: 13px;
     }
 };

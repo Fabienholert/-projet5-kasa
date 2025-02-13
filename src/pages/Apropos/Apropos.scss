@@ -1,6 +1,11 @@
 @use '../../assets/variables' as vars;
 
-.apropos__container{
+.apropos{
+    .section {
+        filter: brightness(70%)
+    };
+    
+&__container{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -8,5 +13,11 @@
     .collapse{
     display: flex;
     flex-direction: column;
-    }
-};
+
+    &__title{
+        width: 70%;
+        @media (min-width: 370px) and (max-width: 870px){
+        width: 90%;}
+    };
+    };
+}};
