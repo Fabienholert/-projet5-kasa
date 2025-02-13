@@ -18,18 +18,20 @@ export default function Fichelogement() {
     <div className='fichelogement'> 
             <Slideshow images={logement.pictures}/>
             <div className='fichelogement__container'>
+              <div className='fichelogement__container-left'>
               <p className='fichelogement__title'>{logement.title}</p>
               <p className='fichelogement__localisation'>{logement.location}</p>
+              <div className='fichelogement__tag'>
+              {logement.tags.map((tag, index) => (
+              <Tag key={index} tagName={tag} />
+              ))}
+              </div>
+            </div>
             <div className="fichelogement__info">
               <p className='fichelogement__info--texte'>{logement.host.name}</p>
               <img src={logement.host.picture} alt={`Photo de ${logement.host.name}`} />
             </div>
             <Rating rating={parseInt(logement.rating, 10)} />
-          <div className='fichelogement__tag'>
-              {logement.tags.map((tag, index) => (
-              <Tag key={index} tagName={tag} />
-              ))}
-          </div>
           <div className='fichelogement__collapse'>
             <Collapse title="Description"> <div className='fichelogement_collapse--texte'>{logement.description}</div></Collapse>
             <Collapse title="Équipements" >  
