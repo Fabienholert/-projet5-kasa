@@ -2,111 +2,127 @@
 @use '../../assets/mixin' as mixins;
 
 .fichelogement {
-    width: 100%;
-    margin-bottom: 30px;
-    @include mixins.mobile {
-    margin-bottom: 10px;
-    };
+  width: 100%;
+  margin-bottom: 30px;
 
-    &__container{
+  @include mixins.mobile {
+    margin-bottom: 10px;
+  }
+
+  &__container {
     display: flex;
     width: 90%;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     @include mixins.mobile {
-    display: flex;
-    flex-direction: column;
-    };
+      flex-direction: column;
+    }
 
-    &-left{
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    @include mixins.mobile {
-    width: 100%;
-    }};
-
-    &-right{
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    @include mixins.mobile {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    }}
-    };
-
-    &__title {
-      @include mixins.text-style(36px,500,vars.$police,vars.$red)
-    };
-  
-    &__localisation {
-      font-size: 18px;
-    };
-
-    &__tag {
-        display: flex;
-        flex-direction: row;
-        gap:20px
-      };
-  
-    &__info {
+    &-left {
       display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      @include mixins.mobile {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
       justify-content: flex-end;
-      align-items: center;
-      
-      & img {
+
+      @include mixins.mobile {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+
+  &__title {
+    @include mixins.text-style(36px, 500, vars.$police, vars.$red);
+    margin:0;
+    padding:0;
+  }
+
+  &__localisation {
+    font-size: 18px;
+    margin-top: 5px;
+    padding:0px;
+  }
+
+  &__tag {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & img {
       width: 64px;
       height: 64px;
       border-radius: 50%;
       object-fit: cover;
-      }
-    };
+    }
+  }
 
-    &__info--texte {
-      @include mixins.text-style(18px,500,vars.$police,vars.$red);
-      display: flex;
-      width: 80px;
-      margin: 0%
-      };
+  &__info--texte {
+    @include mixins.text-style(18px, 500, vars.$police, vars.$red);
+    display: flex;
+    width: 80px;
+    margin: 0;
+  }
 
-    &__collapse{
-      display:flex;
-      flex-direction: row;
-      margin-top: 20px;
-      width: 100%;
-      @include mixins.mobile {
+  &__collapse {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+
+    @include mixins.mobile {
       flex-direction: column;
     }
-    .collapse{
+
+    .collapse {
       display: flex;
       width: 50%;
       margin: 0 auto;
       flex-direction: column;
+
       @include mixins.mobile {
-      margin-bottom: 20px;
-      width: 100%;
+        margin-bottom: 20px;
+        width: 100%;
       }
 
-      &__title{
-      width: 80%;
-      @include mixins.mobile {
-      width: 90%;
+      &__title {
+        width: 80%;
+
+        @include mixins.mobile {
+          width: 90%;
+        }
       }
 
-      }
-      &__content{
-      width: 80%;
-      @include mixins.mobile {
-      width: 90%;
-      }}
+      &__content {
+        width: 80%;
 
-      &__content li{
+        @include mixins.mobile {
+          width: 90%;
+        }
+      }
+
+      &__content li {
         list-style-type: none;
       }
-    }}
-}; 
+    }
+  }
+}

@@ -1,23 +1,27 @@
 @use '../../assets/variables' as vars;
+@use '../../assets/mixin' as mixins;
 
-.apropos{
-    .section {
-        filter: brightness(70%)
-    };
-    
-&__container{
+.apropos {
+  .section {
+    filter: brightness(70%);
+  }
+
+  &__container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 
-    .collapse{
-    display: flex;
-    flex-direction: column;
+    .collapse {
+      display: flex;
+      flex-direction: column;
 
-    &__title{
+      &__title {
         width: 70%;
-        @media (min-width: 370px) and (max-width: 870px){
-        width: 90%;}
-    };
-    };
-}};
+
+        @include mixins.mobile {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

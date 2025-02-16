@@ -1,12 +1,13 @@
 @use '../../assets/variables' as vars;
+@use '../../assets/mixin' as mixins;
 
-.collapse{
+.collapse {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 
-  &__title{
-    background: vars.$red ;
+  &__title {
+    background: vars.$red;
     border-radius: 5px;
     border: none;
     color: vars.$white;
@@ -17,26 +18,29 @@
     font-weight: 700;
     font-family: vars.$police;
     padding: 10px;
-    @media (min-width: 370px) and (max-width: 870px){
-    font-size: 13px;
-    }
-};
 
-  &__arrow{
-    font-size:medium;
+    @include mixins.mobile {
+      font-size: 13px;
+    }
+  }
+
+  &__arrow {
+    font-size: medium;
     cursor: pointer;
-    @media (min-width: 370px) and (max-width: 870px){
-    width: 16px;
-    height: 9px ; 
-}};
+
+    @include mixins.mobile {
+      width: 16px;
+      height: 9px;
+    }
+  }
 
   &__arrow {
     transition: transform 0.5s ease;
-  };
+  }
 
   &__arrow--rotated {
     transform: rotate(-180deg);
-  };
+  }
 
   &__content {
     max-height: 0;
@@ -44,27 +48,28 @@
     transition: max-height 0.3s ease, opacity 0.5s ease, transform 0.3s ease;
     opacity: 0;
     transform: translateY(-20px);
-  };
+  }
 
   &__content--open {
     max-height: 500px;
     opacity: 1;
     transform: translateY(0);
-    };
+  }
 
   &__content {
     width: 70%;
     background: vars.$grey;
     border-radius: 5px;
     font-size: 18px;
-    @media (min-width: 370px) and (max-width: 870px){
-    width: 90%;
-    font-size: 13px;
-  }};
 
-  &__content-p{
-    text-align: start;
-    margin:20px;
+    @include mixins.mobile {
+      width: 90%;
+      font-size: 13px;
+    }
   }
-};
 
+  &__content-p {
+    text-align: start;
+    margin: 20px;
+  }
+}

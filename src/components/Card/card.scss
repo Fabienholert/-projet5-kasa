@@ -1,8 +1,13 @@
-.card{
-    width: 30%;
-    height: 340px;
-    border-radius: 30px;
-    @media (min-width: 370px) and (max-width: 870px){
+@use '../../assets/variables' as vars;
+@use '../../assets/mixin' as mixins;
+
+.card {
+  width: 30%;
+  height: 340px;
+  border-radius: 30px;
+
+  @include mixins.mobile {
     width: 90%;
     height: 255px;
-}}
+  }
+}

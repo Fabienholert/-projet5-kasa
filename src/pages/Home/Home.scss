@@ -1,73 +1,80 @@
 @use '../../assets/variables' as vars;
 @use '../../assets/mixin' as mixins;
-.home{
-    width: 100%;
-    margin-bottom: 30px;
-    @include mixins.mobile {
+
+.home {
+  width: 100%;
+  margin-bottom: 30px;
+
+  @include mixins.mobile {
     margin-bottom: 0px;
+  }
+
+  .section {
+    filter: brightness(30%);
+
+    @include mixins.mobile {
+      margin-bottom: -50px;
     }
+  }
 
-    .section{
-        filter: brightness(30%);
-        @include mixins.mobile {
-        margin-bottom: -50px;
-    }};
+  &__texte {
+    @include mixins.text-style(48px, 700, vars.$police, vars.$white);
+    @include mixins.flex-center(center, center);
+    position: relative;
+    bottom: 180px;
+    right: 20px;
+    -webkit-text-stroke: 1px vars.$black;
+    text-shadow: 1px 2px 0 vars.$black;
+    margin: 0 auto;
 
-    &__texte{
-        @include mixins.text-style(48px,700,vars.$police,vars.$white);
-        @include mixins.flex-center(center, center);
-        position:relative;
-        bottom: 180px;
-        right: 20px;
-        -webkit-text-stroke:  1px vars.$black;
-        text-shadow: 1px 2px 0 vars.$black;
-        margin: 0 auto;
-        @include mixins.mobile {
-        @include mixins.text-style(24px,700,vars.$police,vars.$white);
-        width: 60%;
-        bottom:60px;
-        left:0px;
-        }}
+    @include mixins.mobile {
+      @include mixins.text-style(24px, 700, vars.$police, vars.$white);
+      width: 60%;
+      bottom: 60px;
+      left: 0;
+    }
+  }
 
-    &__card{
-        width: 90%;
-        background: vars.$grey;
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:space-evenly;
-        margin: 0 auto;
-        padding-top: 50px;
-		padding-bottom: 0;
-        border-radius: 25px;
-        row-gap: 30px;
-        @include mixins.mobile {
-        margin: 0px;
-        padding: 0px;    
-        width: 100%;
-        background: none;
-        gap: 122px;
-        }};
-        
+  &__card {
+    width: 90%;
+    background: vars.$grey;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 0;
+    border-radius: 25px;
+    row-gap: 30px;
 
-    & a {
-        text-decoration: none;
-        };
+    @include mixins.mobile {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background: none;
+      gap: 122px;
+    }
+  }
 
-    &__card img{
-        width: 100%;
-        height: 340px;
-        border-radius: 10px;
-        object-fit: cover;
-        };
-    
-    &__card-title{
-        @include mixins.text-style(18px,700,vars.$police,vars.$white);
-        width: 80%;
-        max-width: 300px;
-        transform: translate(5%, -220%);
-        };
+  & a {
+    text-decoration: none;
+  }
 
-    &__card-event {
-                width: 30%;
-            }
-};
+  &__card img {
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  &__card-title {
+    @include mixins.text-style(18px, 700, vars.$police, vars.$white);
+    width: 80%;
+    max-width: 300px;
+    transform: translate(5%, -220%);
+  }
+
+  &__card-event {
+    width: 30%;
+  }
+}
