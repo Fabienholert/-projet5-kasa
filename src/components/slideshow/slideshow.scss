@@ -24,7 +24,6 @@
     left: 50%;
     transform: translateX(-50%); 
     @include mixins.text-style(18px, 500, vars.$police, vars.$white);
-    color: vars.$white;
     @include mixins.mobile {
     display: none;
     }};

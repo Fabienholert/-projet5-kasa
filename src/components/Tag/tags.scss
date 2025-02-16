@@ -1,18 +1,15 @@
 @use '../../assets/variables' as vars;
+@use '../../assets/mixin' as mixins;
 
 .tag{
-    color: vars.$white;
+    @include mixins.text-style(14px, 700, vars.$police, vars.$white);
     border-radius:10px;
     background: vars.$red;
-    font-size: 14px;
-    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: vars.$police;
     padding: 10px 15px 10px 15px;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     padding: 5px 10px 5px 10px;
-    font-weight: 500;
-    font-size: 10px;
+    @include mixins.text-style(10px, 500, vars.$police, vars.$white);
 }}
