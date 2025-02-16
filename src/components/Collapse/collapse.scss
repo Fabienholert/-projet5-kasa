@@ -11,16 +11,13 @@
     border-radius: 5px;
     border: none;
     color: vars.$white;
-    font-size: 24px;
+    @include mixins.text-style(24px, 700, vars.$police, vars.$white);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 700;
-    font-family: vars.$police;
     padding: 10px;
-
     @include mixins.mobile {
-      font-size: 13px;
+      @include mixins.text-style(13px, 700, vars.$police, vars.$white);
     }
   }
 
@@ -60,11 +57,10 @@
     width: 70%;
     background: vars.$grey;
     border-radius: 5px;
-    font-size: 18px;
-
+    @include mixins.text-style(18px, normal); 
     @include mixins.mobile {
       width: 90%;
-      font-size: 13px;
+      @include mixins.text-style(13px, normal);
     }
   }
 

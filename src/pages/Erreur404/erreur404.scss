@@ -3,10 +3,12 @@
 
 
 .error {
-    @include mixins.flex-center(center, center, column);
-        gap:113px;
-        margin-top: 50px;
-        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:113px;
+    margin-top: 50px;
 
     &__title{
         @include mixins.text-style(228px,700,vars.$police,vars.$red);
