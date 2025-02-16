@@ -1,0 +1,20 @@
+@mixin mobile {
+    @media (min-width: 370px) and (max-width: 870px) {
+      @content;
+    }
+  };
+
+  @mixin flex-center($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  };
+
+  @mixin text-style($size: 16px, $weight: normal, $family: sans-serif, $color: black) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    color: $color;
+  };
+
