@@ -1,9 +1,10 @@
 @use '../../assets/variables' as vars;
+@use '../../assets/mixin' as mixins;
 
 .fichelogement {
     width: 100%;
     margin-bottom: 30px;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     margin-bottom: 10px;
     };
 
@@ -14,7 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     display: flex;
     flex-direction: column;
     };
@@ -23,7 +24,7 @@
     display: flex;
     justify-content: start;
     flex-direction: column;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     width: 100%;
     }};
 
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
@@ -40,10 +41,7 @@
     };
 
     &__title {
-      font-weight: 500 ;
-      font-size: 36px;
-      margin: 0px;
-      color : vars.$red;
+      @include mixins.text-style(36px,500,vars.$police,vars.$red)
     };
   
     &__localisation {
@@ -70,12 +68,9 @@
     };
 
     &__info--texte {
+      @include mixins.text-style(18px,500,vars.$police,vars.$red);
       display: flex;
       width: 80px;
-      font-size: 18px;
-      font-weight: 500;
-      font-family: vars.$police;
-      color: vars.$red;
       margin: 0%
       };
 
@@ -84,7 +79,7 @@
       flex-direction: row;
       margin-top: 20px;
       width: 100%;
-      @media (min-width: 370px) and (max-width: 870px){
+      @include mixins.mobile {
       flex-direction: column;
     }
     .collapse{
@@ -92,21 +87,21 @@
       width: 50%;
       margin: 0 auto;
       flex-direction: column;
-      @media (min-width: 370px) and (max-width: 870px){
+      @include mixins.mobile {
       margin-bottom: 20px;
       width: 100%;
       }
 
       &__title{
       width: 80%;
-      @media (min-width: 370px) and (max-width: 870px){
+      @include mixins.mobile {
       width: 90%;
       }
 
       }
       &__content{
       width: 80%;
-      @media (min-width: 370px) and (max-width: 870px){
+      @include mixins.mobile {
       width: 90%;
       }}
 
