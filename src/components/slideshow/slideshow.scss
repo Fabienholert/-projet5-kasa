@@ -1,4 +1,5 @@
 @use '../../assets/variables' as vars;
+@use '../../assets/mixin' as mixins;
 
 .slideshow {
     margin-top: 50px;
@@ -13,27 +14,28 @@
     height: 415px;
     border-radius: 25px;
     object-fit: cover;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     height: 255px;
     }};
 
     &__counter {
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%); 
+    @include mixins.text-style(18px, 500, vars.$police, vars.$white);
     color: vars.$white;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     display: none;
     }};
 
     &__controls{
     position: absolute;
-    transform: translate(6%, -320%);
+    transform: translate(6%, -300%);
     display: flex;
     width: 89%;
     justify-content: space-between;
-    @media (min-width: 370px) and (max-width: 870px){
+    @include mixins.mobile {
     transform: translate(6%, -450%);
     }}
 
@@ -44,7 +46,7 @@
     };
 
     &__controls img{
-    @media (min-width: 370px) and (max-width: 870px){
+        @include mixins.mobile {
             height: 24px;
     }}
 };

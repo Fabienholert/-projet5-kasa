@@ -1,3 +1,5 @@
+@use '../../assets/mixin' as mixins;
+
 .section {
     display: flex;
     justify-content: center;
@@ -10,7 +12,7 @@
         margin-bottom: 30px;
         width: 90%;
         height: 223px;
-        @media (min-width: 370px) and (max-width: 870px){
+        @include mixins.mobile {
         height: 111px;
         }};
 }
