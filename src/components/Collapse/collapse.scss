@@ -10,7 +10,6 @@
     background: vars.$red;
     border-radius: 5px;
     border: none;
-    color: vars.$white;
     @include mixins.text-style(24px, 700, vars.$police, vars.$white);
     display: flex;
     align-items: center;
