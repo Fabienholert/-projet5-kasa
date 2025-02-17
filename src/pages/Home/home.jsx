@@ -11,7 +11,7 @@ export default function Home() {
       <div className="home">
           <Section imgSrc={imageHome} alt="Image de la page d'accueil" />
           <div className="home__texte">
-              Chez vous,partout et ailleurs
+              Chez vous, partout et ailleurs
           </div>
           <div className="home__card">
               {logements.map((logement) => (
